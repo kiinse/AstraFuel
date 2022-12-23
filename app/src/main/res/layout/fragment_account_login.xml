@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/account_login_fragment"
+        style="@style/Theme.AstraFuel"
+        app:enterAnim="@anim/open_animator"
+        app:exitAnim="@anim/close_animator"
+        android:background="?colorPrimary"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        tools:context=".AccountLoginFragment">
+
+    <TextView
+            android:text="@string/account_label"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="-140dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="?colorSecondaryVariant"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+    <EditText
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/rounded_text_box"
+            android:layout_gravity="center"
+            android:text="@string/login_box"
+            android:tooltipText="@string/login_box"
+            android:textAlignment="center"
+            android:ems="10"
+            android:id="@+id/login_text"
+            android:autofillHints="" />
+
+    <EditText
+            android:layout_width="232dp"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_text_box"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="@string/password_box"
+            android:tooltipText="@string/password_box"
+            android:textAlignment="center"
+            android:ems="10"
+            android:id="@+id/password_text"
+            android:autofillHints="" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="@string/login_button"
+            android:background="@drawable/login_button"
+            android:layout_marginTop="140dp"
+            android:layout_gravity="center"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_button"
+            android:textColor="?colorSecondaryVariant" />
+</FrameLayout>

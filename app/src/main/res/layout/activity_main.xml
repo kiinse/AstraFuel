@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <com.yandex.mapkit.mapview.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+                android:id="@+id/window_fragment"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" >
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:background="@drawable/rounded_all_corners"
+                android:id="@+id/bottom_navigation"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:clipToPadding="false"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:itemTextColor="@color/bottom_nav_color"
+                app:itemIconTint="@color/bottom_nav_color"
+                app:labelVisibilityMode="labeled"
+                app:itemPaddingTop="13dp"
+                app:itemPaddingBottom="13dp"
+                app:itemIconSize="37dp"
+                app:menu="@menu/nav_menu" >
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </com.yandex.mapkit.mapview.MapView>
+
+    <FrameLayout
+            android:id="@+id/station_fragment"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_height="732dp"
+            android:layout_width="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/news_fragment"
+        style="@style/Theme.AstraFuel"
+        app:enterAnim="@anim/open_animator"
+        app:exitAnim="@anim/close_animator"
+        android:background="?colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        tools:context=".NewsFragment">
+
+    <TextView
+            android:text="@string/news_label"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:textSize="30sp"
+            android:textColor="?colorSecondaryVariant"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_label" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="661dp">
+
+        <LinearLayout
+                android:id="@+id/news_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+    </ScrollView>
+</FrameLayout>

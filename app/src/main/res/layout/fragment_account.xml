@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/account_fragment"
+        style="@style/Theme.AstraFuel"
+        app:enterAnim="@anim/open_animator"
+        app:exitAnim="@anim/close_animator"
+        android:background="?colorPrimary"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        tools:context=".AccountFragment">
+
+    <TextView
+            android:text="@string/account_name"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:textSize="30sp"
+            android:textColor="?colorSecondaryVariant"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="@string/exit_button"
+            android:background="@drawable/exit_button"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="right"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/exit_button"
+            android:textColor="?colorSecondaryVariant" />
+
+</FrameLayout>

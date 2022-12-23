@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#6CF43B" />
+
+    <solid style="@style/Theme.AstraFuel" android:color="?colorOnPrimary" />
+
+    <corners android:radius="1500dp" />
+</shape>

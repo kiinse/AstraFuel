@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/station_fragment"
+        style="@style/Theme.AstraFuel"
+        app:enterAnim="@anim/open_animator"
+        app:exitAnim="@anim/close_animator"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        tools:context=".StationFragment">
+
+    <RelativeLayout
+            android:id="@+id/station_texts"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+        <ImageButton
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:background="@drawable/rounded_button"
+                android:layout_width="68dp"
+                android:layout_height="48dp"
+                android:id="@+id/back_button"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/back" />
+
+        <TextView
+                android:text="@string/station_name"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="90dp"
+                android:textSize="18sp"
+                android:textColor="?colorSecondaryVariant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/station_name" />
+
+        <TextView
+                android:text="@string/station_address"
+                android:layout_marginTop="44dp"
+                android:layout_marginStart="90dp"
+                android:textSize="12sp"
+                android:textColor="?colorSecondaryVariant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/station_address" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/station_enabled"
+            android:background="@drawable/station_enabled"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignEnd="@id/station_texts"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    <ScrollView
+            android:background="@drawable/rounded_all_corners"
+            android:layout_width="match_parent"
+            android:layout_marginTop="75dp"
+            android:layout_height="239dp">
+
+        <LinearLayout
+                android:id="@+id/fuel_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical" >
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+            android:text="@string/suppliers_label"
+            android:layout_marginTop="330dp"
+            android:layout_marginStart="20dp"
+            android:textSize="17sp"
+            android:textColor="?colorSecondaryVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="360dp"
+            android:layout_height="90dp">
+
+        <LinearLayout
+                android:id="@+id/suppliers_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+</RelativeLayout>

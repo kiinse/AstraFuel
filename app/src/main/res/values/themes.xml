@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AstraFuel" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">#DDDCDC</item>
+        <item name="colorOnPrimary">#F1F1F1</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gray</item>
+        <item name="colorSecondaryVariant">#12122C</item>
+        <item name="colorOnSecondary">#8A8A8A</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
