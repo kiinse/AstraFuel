@@ -89,6 +89,7 @@ class StationFragment : Fragment() {
             }
         }
     }
+
     override fun onStop() {
         super.onStop()
         DrivingRouteListener.clearRoutes()
