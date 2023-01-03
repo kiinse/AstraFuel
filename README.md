@@ -25,7 +25,17 @@
     <img src="https://img.shields.io/github/license/kiinse/AstraFuel?style=flat-square" alt="licence"> 
   </a><br><br>
 </p>
+<p align="center">
+  <a href="https://github.com/kiinse/AstraFuel/blob/master/.github/document.docx">Документ курсового проекта</a>
+</p>
 
 ## Информация
 
-Данное приложение было написано в ходе выполнения курсового проекта.
+Данное приложение было написано в ходе выполнения курсового проекта. В качестве API карт - использовались Yandex карты.
+
+
+
+<h1 align="center">
+  <img width=250 height=500 src="https://raw.githubusercontent.com/kiinse/AstraFuel/master/.github/screenshot1.png"  alt=""/>
+  <img width=250 height=500 src="https://raw.githubusercontent.com/kiinse/AstraFuel/master/.github/screenshot2.png"  alt=""/>
+</h1>
